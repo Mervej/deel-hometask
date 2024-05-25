@@ -1,0 +1,6 @@
+{
+    "displayName": "deel-api-test",
+    "verbose": true,
+    "roots": ["src/"],
+    "collectCoverage": true
+}
