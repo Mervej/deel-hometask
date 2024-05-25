@@ -15,7 +15,9 @@ class JobController {
         data: response,
       });
     } catch (error) {
-      next(error);
+      res.status(501).send({
+        message: error || "Something went wrong, please try again later"
+      });
     }
   }
 
@@ -32,7 +34,9 @@ class JobController {
         data: response,
       });
     } catch (error) {
-      next(error);
+      res.status(501).send({
+        message: error || "Something went wrong, please try again later"
+      });
     }
   }
 }

@@ -8,7 +8,7 @@ class Middleware {
     });
 
     if (!profile)
-      res.status(401).send({
+      return res.status(401).send({
         message: "Invalid profile Id",
       });
 

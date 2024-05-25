@@ -27,7 +27,7 @@ class AdminRepository {
       if (results[0]) return results[0].profession;
       else return "No such profession found for the given date range";
     } catch (err) {
-      console.log(err);
+      throw err;
     }
   }
 
@@ -56,7 +56,7 @@ class AdminRepository {
       if (results[0]) return results;
       else return "No such profession found for the given date range";
     } catch (err) {
-      console.log(err);
+      throw err;
     }
   }
 }
